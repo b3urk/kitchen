@@ -1,9 +1,21 @@
 {% extends "base.html" %}
 {% block content %}
 <ul class="menu" role="list">
+
+    {% for page in paginator.pages %}
+    <li><a href="{{ page.permalink }}">{{ page.title }}</a></li>
+    {% endfor %}
+
     <li><a href="#">crêpe au jambon, salade verte</a></li>
     <li><a href="#">tomates farcies</a></li>
     <li><a href="#">moussaka</a></li>
     <li><a href="#">cabillaud en papillote à la verveine, beurre acidulé</a></li>
 </ul>
+<nav class="container_pagination">
+	<ul class="pagination">
+		<li><a href="">precedent</a></li>
+		<li><a href="#">page</a></li>
+		<li><a href="#">suivant</a></li>
+	</ul>
+</nav>
 {% endblock content %}
