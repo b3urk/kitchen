@@ -1,6 +1,24 @@
 {% extends "base.html" %}
 {% block content %}
-<header>
-    <h1>kitchen homepage</h1>
-</header>
+<ul class="menu" role="list">
+
+    {% for page in paginator.pages %}
+    <li><a href="{{ page.permalink }}">{{ page.title }}</a></li>
+    {% endfor %}
+
+</ul>
+
+{% if paginator.number_pagers > 1 %}
+	<nav class="container_pagination">
+		<ul class="pagination">
+			{% if paginator.previous %}
+			<li><a href="{{ paginator.previous }}">precedent</a></li>
+			{% endif %}
+			<span>page {{ paginator.current_index }}</span>
+			{% if paginator.next %}
+			<li><a href="{{ paginator.next }}">suivant</a></li>
+			{% endif %}
+		</ul>
+	</nav>
+{% endif %}
 {% endblock content %}
