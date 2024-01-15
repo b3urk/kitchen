@@ -3,7 +3,7 @@ lang: "fr"
 title: "porc au caramel"
 ---
 
-# Ingrédients
+## Ingrédients
 
 - 650g de poitrine de porc
 - 4 œufs dur
@@ -20,7 +20,7 @@ title: "porc au caramel"
 - de l'eau
 - de la fécule de mais (pour une sauce plus épaisse)
 
-# Préparation
+## Préparation
 
 On découpe en dé de 1 cm sur 1 cm la poitrine de porc ensuite, on la fait
 bouillir dans de l'eau à feu moyen durant 20 à 30 min.
